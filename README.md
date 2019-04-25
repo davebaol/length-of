@@ -5,13 +5,13 @@
 ## Install with [npm](npmjs.org)
 
 ```bash
-npm i length-of --save
+npm i @davebaol/length-of --save
 ```
 
 ## Usage
 
 ```js
-var lengthOf = require('length-of');
+var lengthOf = require('@davebaol/length-of');
 
 lengthOf({a: 'a', b: 'b'});
 //=> 2
@@ -38,4 +38,4 @@ npm i -d && npm test
 
 # License
 
-MIT © Davide Sessi
+MIT Â© Davide Sessi
