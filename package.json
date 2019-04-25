@@ -1,7 +1,7 @@
 {
   "name": "@davebaol/length-of",
   "version": "1.0.0",
-  "description": "Get the number of items of an array, characters of a string or properties of an object; undefined otherwise",
+  "description": "Get the number of items of an array, characters of a string or properties of an object; undefined otherwise.",
   "main": "./lib/index.js",
   "scripts": {
     "clean": "rimraf lib",
@@ -9,7 +9,7 @@
     "test:prod": "cross-env BABEL_ENV=production npm run test",
     "test:only": "mocha --require babel-core/register --require babel-polyfill --recursive",
     "test:watch": "npm test -- --watch",
-    "cover": "nyc --check-coverage --lines 100 npm run test:only",
+    "cover": "nyc --check-coverage --lines 100 --reporter=lcov --reporter=text npm run test:only",
     "lint": "eslint src test",
     "build": "cross-env BABEL_ENV=production babel src --out-dir lib",
     "prepublish": "npm run clean && npm run lint && npm run test && npm run build"
